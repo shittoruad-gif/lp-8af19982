@@ -9,7 +9,7 @@
 <meta property="og:title" content="家系ラーメン 王道乃印 ゆず乃家｜福山市・2027年1〜2月オープン予定">
 <meta property="og:description" content="王道家・清水裕正社長が手掛ける「王道乃印」が福山市緑町に。開店のお知らせはInstagramで。">
 <meta property="og:type" content="website">
-<meta property="og:image" content="images/hero_ramen_仮.jpg">
+<meta property="og:image" content="images/team_enishiya.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Shippori+Mincho+B1:wght@600;700;800&display=swap" rel="stylesheet">
@@ -45,7 +45,7 @@ a{color:inherit}
 /* hero */
 .hero{position:relative;background:var(--sumi);color:var(--kinari);overflow:hidden}
 .hero-photo{position:absolute;inset:0}
-.hero-photo img{width:100%;height:100%;object-fit:cover;object-position:center 55%;opacity:.42}
+.hero-photo video{width:100%;height:100%;object-fit:cover;object-position:center 40%;opacity:.5}
 .hero-photo::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(21,19,17,.55) 0%,rgba(21,19,17,.25) 40%,rgba(21,19,17,.92) 100%)}
 .hero-inner{position:relative;padding:68px 20px 36px;text-align:center;max-width:760px;margin:0 auto}
 .hero .badge{display:inline-block;background:var(--shu);color:#fff;font-weight:700;font-size:13px;letter-spacing:.08em;padding:5px 14px;border-radius:2px}
@@ -86,7 +86,7 @@ p + p{margin-top:1em}
 
 /* about brand */
 .about-grid{display:grid;gap:32px;align-items:center}
-.about-photo img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:4px}
+.about-photo img{width:100%;aspect-ratio:4/3;object-fit:cover;object-position:center 70%;border-radius:4px}
 .about-photo figcaption{font-size:11px;color:#a89b8a;margin-top:6px}
 .about-text h3{font-family:var(--mincho);font-weight:800;font-size:22px;line-height:1.6;margin-bottom:14px}
 .mark-row{display:flex;align-items:center;gap:16px;margin-bottom:20px}
@@ -97,6 +97,16 @@ p + p{margin-top:1em}
 .point .num{font-family:var(--mincho);color:#e07a5f;font-weight:800;font-size:15px;letter-spacing:.1em}
 .point h4{font-size:18px;margin:4px 0 6px;line-height:1.5}
 .point p{font-size:15px;color:var(--kinari-2)}
+
+/* junbi */
+.junbi{background:var(--kinari)}
+.junbi-lead{max-width:640px;margin:0 auto 28px;text-align:center}
+.junbi-grid{display:grid;gap:16px;grid-template-columns:1fr 1fr}
+.junbi-grid figure{margin:0}
+.junbi-grid img,.junbi-grid video{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:4px;background:var(--sumi-3);display:block}
+.junbi-grid .junbi-video{grid-column:1 / -1}
+.junbi-grid .junbi-video video{aspect-ratio:4/5;object-position:center 45%}
+.junbi-grid figcaption{font-size:12px;color:var(--muted);margin-top:6px}
 
 /* oshirase */
 .info-box{background:#fff;border:1px solid var(--line-c);border-radius:6px;padding:24px 20px}
@@ -134,6 +144,8 @@ footer .f-sns a{color:var(--kinari);font-size:13px}
   .points{grid-template-columns:repeat(3,1fr)}
   .access-grid{grid-template-columns:1.1fr 1fr;align-items:start}
   .kyokan ul{grid-template-columns:1fr 1fr}
+  .junbi-grid{grid-template-columns:1.3fr 1fr 1fr;align-items:start}
+  .junbi-grid .junbi-video{grid-column:auto}
   .fixed-bar{display:none}
   footer{padding-bottom:32px}
 }
@@ -155,7 +167,7 @@ footer .f-sns a{color:var(--kinari);font-size:13px}
 
 <!-- 最初の画面 -->
 <section class="hero" style="padding:0">
-  <div class="hero-photo"><img src="images/hero_ramen_仮.jpg" alt="ラーメンのイメージ写真" fetchpriority="high"></div>
+  <div class="hero-photo"><video src="images/kitchen_yuge.mp4" poster="images/kitchen_yuge_poster.jpg" autoplay muted loop playsinline preload="auto" aria-label="厨房で湯気の立つ寸胴の前に立つスタッフ"></video></div>
   <div class="hero-inner">
     <span class="badge">広島県初上陸</span>
     <img class="logo" src="images/logo_kamon_nashi_shiro.png" alt="王道乃印 ゆず乃家">
@@ -199,8 +211,8 @@ footer .f-sns a{color:var(--kinari);font-size:13px}
     <div class="sec-title"><span class="en">ABOUT</span><h2>「王道乃印」とは</h2></div>
     <div class="about-grid">
       <figure class="about-photo">
-        <img src="images/ramen_akadonburi_仮.jpg" alt="ラーメンのイメージ写真" loading="lazy">
-        <figcaption>写真はイメージです</figcaption>
+        <img src="images/staff_3nin.jpg" alt="ゆず乃家のTシャツを着たスタッフが、王道乃印の店舗の前で腕を組んで立つ写真" loading="lazy">
+        <figcaption>王道乃印 えにし家の前で</figcaption>
       </figure>
       <div class="about-text">
         <div class="mark-row">
@@ -235,6 +247,28 @@ footer .f-sns a{color:var(--kinari);font-size:13px}
         Instagramで開店日を受け取る
       </a>
       <p class="sub">X：<a href="https://x.com/oudou_yuzunoya" target="_blank" rel="noopener">@oudou_yuzunoya</a></p>
+    </div>
+  </div>
+</section>
+
+<!-- 開店に向けて -->
+<section class="junbi">
+  <div class="wrap">
+    <div class="sec-title"><span class="en">PREPARING</span><h2>開店に向けて、<br>厨房に立っています</h2></div>
+    <p class="junbi-lead">ゆず乃家のメンバーは、王道乃印の店「えにし家」の厨房に立ち、開店に向けた準備を進めています。準備の様子は、InstagramとXでもお届けします。</p>
+    <div class="junbi-grid">
+      <figure class="junbi-video">
+        <video src="images/kitchen_junbi.mp4" poster="images/kitchen_junbi_poster.jpg" autoplay muted loop playsinline preload="metadata" aria-label="厨房でラーメンを作るスタッフの動画"></video>
+        <figcaption>厨房での準備の様子</figcaption>
+      </figure>
+      <figure>
+        <img src="images/team_enishiya.jpg" alt="鉢巻きをしたスタッフ7人が、王道乃印 えにし家の前で並ぶ写真" loading="lazy">
+        <figcaption>王道乃印 えにし家の前で</figcaption>
+      </figure>
+      <figure>
+        <img src="images/staff_ushiro.jpg" alt="背中に「ゆず乃家」と書かれたTシャツを着て、スーツケースを引いて歩くスタッフの後ろ姿" loading="lazy">
+        <figcaption>背中に「ゆず乃家」を背負って</figcaption>
+      </figure>
     </div>
   </div>
 </section>
@@ -303,7 +337,7 @@ footer .f-sns a{color:var(--kinari);font-size:13px}
   </div>
   <p>家系ラーメン 王道乃印 ゆず乃家　広島県福山市緑町2-1-8</p>
   <p>運営：株式会社ハートランド</p>
-  <p class="photo-note">ラーメンの写真はイメージです</p>
+  <p class="photo-note">写真・動画は、王道乃印 えにし家で撮影したものです</p>
 </footer>
 
 <div class="fixed-bar">
