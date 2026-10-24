@@ -84,8 +84,8 @@ a{color:inherit}
 .hero-sub b{color:#fff;font-weight:700}
 
 /* ========== 券売機のボタン ========== */
-.kenbaiki{width:min(100%,440px);margin:16px auto 0;background:linear-gradient(180deg,#d9d2c6,#b9b0a2);border-radius:14px;padding:10px;box-shadow:0 18px 40px rgba(0,0,0,.55),inset 0 2px 0 rgba(255,255,255,.6),inset 0 -3px 0 rgba(0,0,0,.25)}
-.led{background:#120b06;border-radius:6px;overflow:hidden;height:30px;display:flex;align-items:center;box-shadow:inset 0 0 0 2px #000,inset 0 0 18px rgba(255,120,0,.15);margin-bottom:10px}
+.kenbaiki{width:min(100%,440px);max-width:100%;min-width:0;margin:16px auto 0;background:linear-gradient(180deg,#d9d2c6,#b9b0a2);border-radius:14px;padding:10px;box-shadow:0 18px 40px rgba(0,0,0,.55),inset 0 2px 0 rgba(255,255,255,.6),inset 0 -3px 0 rgba(0,0,0,.25)}
+.led{width:100%;min-width:0;contain:inline-size;background:#120b06;border-radius:6px;overflow:hidden;height:30px;display:flex;align-items:center;box-shadow:inset 0 0 0 2px #000,inset 0 0 18px rgba(255,120,0,.15);margin-bottom:10px}
 .led p{font-family:var(--dot);color:#ff8a1c;font-size:15px;white-space:nowrap;text-shadow:0 0 6px rgba(255,138,28,.9),0 0 14px rgba(255,90,0,.5);animation:ledrun 16s linear infinite;padding-left:100%}
 @keyframes ledrun{to{transform:translateX(-100%)}}
 .ken{position:relative;display:flex;align-items:center;gap:12px;width:100%;min-height:64px;padding:10px 14px;border-radius:9px;text-decoration:none;color:#14110f;
@@ -99,7 +99,7 @@ a{color:inherit}
 .ken .tx b{display:block;font-family:var(--heavy);font-weight:900;font-size:18px;letter-spacing:.02em}
 .ken .tx small{display:block;font-size:12px;color:#5d5348;margin-top:3px}
 .ken .arrow{font-family:var(--dela);font-size:20px;color:var(--shu)}
-.ken-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:10px}
+.ken-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:10px;margin-top:10px}
 .ken-grid .ken{min-height:58px;padding:8px 10px;gap:8px}
 .ken-grid .ken .lamp{width:34px;height:34px;border-radius:7px}
 .ken-grid .ken .lamp svg{width:20px;height:20px}
@@ -193,7 +193,7 @@ section{position:relative}
 
 /* ========== 王道乃印とは ========== */
 .about{background:var(--sumi-2);overflow:hidden}
-.about-grid{display:grid;gap:34px;margin-top:40px}
+.about-grid{display:grid;grid-template-columns:minmax(0,1fr);gap:34px;margin-top:40px}
 .about-photo{position:relative}
 .about-photo img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center 75%;clip-path:polygon(0 0,100% 4%,100% 100%,0 96%)}
 .about-photo figcaption{font-size:11px;color:var(--muted);margin-top:8px}
@@ -211,8 +211,9 @@ section{position:relative}
 .place .kicker{color:var(--shu)}
 .open-big{font-family:var(--dela);font-size:clamp(46px,14vw,120px);line-height:.95;margin-top:16px;letter-spacing:-.01em}
 .open-big small{display:block;font-family:"Noto Sans JP",sans-serif;font-weight:700;font-size:14px;letter-spacing:.1em;margin-top:10px;color:#6b5f52}
-.place-grid{display:grid;gap:26px;margin-top:36px}
-.map{width:100%;aspect-ratio:4/3;border:0;border-radius:14px;background:var(--kinari-2);filter:grayscale(.25) sepia(.15)}
+.place-grid{display:grid;grid-template-columns:minmax(0,1fr);gap:26px;margin-top:36px}
+.about-grid>*,.place-grid>*{min-width:0}
+.map{display:block;width:100%;max-width:100%;height:auto;aspect-ratio:4/3;border:0;border-radius:14px;background:var(--kinari-2);filter:grayscale(.25) sepia(.15)}
 .place dl{display:grid;grid-template-columns:5.5em 1fr;font-size:15px}
 .place dt,.place dd{padding:12px 0;border-bottom:1px solid #d3c5ae}
 .place dt{font-weight:900}
@@ -261,8 +262,8 @@ footer p + p{margin-top:4px}
   .hero-side{grid-row:2;align-self:center}
   .hero-logo{width:240px}
   .hero-sub{font-size:14px}
-  .about-grid{grid-template-columns:1fr 1.1fr;align-items:center}
-  .place-grid{grid-template-columns:1.1fr 1fr;align-items:start}
+  .about-grid{grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);align-items:center}
+  .place-grid{grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);align-items:start}
   .fixed-bar{display:none}
   footer{padding-bottom:36px}
   .toast{bottom:32px}
