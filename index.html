@@ -219,6 +219,22 @@ section{position:relative}
 .num p{font-size:14.5px;color:var(--kinari-2);margin-top:4px}
 .about-lead{margin-top:16px;color:var(--kinari-2);max-width:620px}
 
+/* ========== お品書き ========== */
+.oshinagaki{background:var(--sumi-2);overflow:hidden}
+.board{position:relative;margin-top:36px;background:radial-gradient(120% 90% at 30% 0%,#c4161c,#8e0e12 70%);border-radius:14px;padding:26px 20px 22px;box-shadow:0 0 0 3px #1b1714,0 0 0 5px var(--kin),0 30px 70px rgba(196,22,28,.3)}
+.board::before{content:"";position:absolute;inset:10px;border:1px solid rgba(232,176,74,.45);border-radius:8px;pointer-events:none}
+.board-grid{position:relative;display:grid;grid-template-columns:minmax(0,1fr);gap:22px}
+.mgroup + .mgroup{margin-top:22px}
+.mgroup h3{display:inline-block;font-family:var(--heavy);font-weight:900;font-size:15px;color:#1b1714;background:var(--kin);padding:3px 12px;border-radius:3px;margin-bottom:8px}
+.mgroup ul{list-style:none}
+.mgroup li{display:flex;align-items:baseline;gap:8px;padding:6px 0;font-weight:700;font-size:15.5px;color:#fff6e8;border-bottom:1px dotted rgba(255,246,232,.28)}
+.mgroup li .nm{flex:1;min-width:0}
+.mgroup li .pr{font-family:var(--dela);font-size:17px;letter-spacing:.02em;white-space:nowrap}
+.mgroup li .pr small{font-family:"Noto Sans JP",sans-serif;font-size:11px;font-weight:700;margin-left:2px}
+.yotei{position:relative;display:flex;gap:10px;align-items:flex-start;margin-top:18px;background:#fff6e8;color:#1b1714;border-radius:8px;padding:12px 14px;font-size:13px;line-height:1.7;font-weight:500}
+.yotei b{flex:none;font-family:var(--heavy);font-weight:900;color:#fff;background:var(--shu);border-radius:4px;padding:1px 8px;font-size:12px;margin-top:2px}
+@media (min-width:768px){.board-grid{grid-template-columns:repeat(2,minmax(0,1fr));column-gap:44px}.board{padding:36px 40px 30px}}
+
 /* ========== 開店・場所 ========== */
 .place{background:var(--kinari);color:#1b1714}
 .place .kicker{color:var(--shu)}
@@ -466,11 +482,26 @@ footer p + p{margin-top:4px}
   </div>
 </section>
 
+<!-- ========== お品書き ========== -->
+<section class="oshinagaki pad" id="menu">
+  <div class="wrap">
+    <span class="kicker rv">MENU</span>
+    <h2 class="h2 rv d1">お品書き<span style="font-size:.5em;margin-left:.4em;color:var(--kin)">（予定）</span></h2>
+    <div class="board rv d2">
+      <div class="board-grid">
+        <div><div class="mgroup"><h3>ラーメン</h3><ul><li><span class="nm">ラーメン</span><span class="pr">900<small>円</small></span></li><li><span class="nm">味玉ラーメン</span><span class="pr">1,050<small>円</small></span></li><li><span class="nm">チャーシューメン</span><span class="pr">1,200<small>円</small></span></li><li><span class="nm">味玉チャーシューメン</span><span class="pr">1,350<small>円</small></span></li><li><span class="nm">特製ラーメン</span><span class="pr">1,250<small>円</small></span></li><li><span class="nm">ネギラーメン</span><span class="pr">1,100<small>円</small></span></li><li><span class="nm">ネギチャーシュー</span><span class="pr">1,350<small>円</small></span></li><li><span class="nm">野菜ラーメン</span><span class="pr">1,100<small>円</small></span></li><li><span class="nm">黒マー油ラーメン</span><span class="pr">1,050<small>円</small></span></li></ul></div><div class="mgroup"><h3>つけ麺</h3><ul><li><span class="nm">つけ麺</span><span class="pr">1,000<small>円</small></span></li><li><span class="nm">特製つけ麺</span><span class="pr">1,350<small>円</small></span></li></ul></div></div>
+        <div><div class="mgroup"><h3>ライス</h3><ul><li><span class="nm">半ライス</span><span class="pr">100<small>円</small></span></li><li><span class="nm">ライス</span><span class="pr">150<small>円</small></span></li><li><span class="nm">大ライス</span><span class="pr">200<small>円</small></span></li><li><span class="nm">チャーシューまぶしごはん</span><span class="pr">250<small>円</small></span></li><li><span class="nm">明太ごはん</span><span class="pr">250<small>円</small></span></li><li><span class="nm">玉子かけごはん</span><span class="pr">200<small>円</small></span></li><li><span class="nm">ネギ丼</span><span class="pr">350<small>円</small></span></li></ul></div><div class="mgroup"><h3>トッピング</h3><ul><li><span class="nm">味玉</span><span class="pr">150<small>円</small></span></li><li><span class="nm">海苔（5枚）</span><span class="pr">150<small>円</small></span></li><li><span class="nm">ほうれん草</span><span class="pr">150<small>円</small></span></li><li><span class="nm">チャーシュー（2枚）</span><span class="pr">300<small>円</small></span></li><li><span class="nm">白髪ネギ</span><span class="pr">200<small>円</small></span></li><li><span class="nm">メンマ</span><span class="pr">150<small>円</small></span></li></ul></div></div>
+      </div>
+      <p class="yotei"><b>予定</b><span>開店前の予定のメニュー・価格です。開店までに変わることがあります。決まり次第、XとInstagramでお知らせします。</span></p>
+    </div>
+  </div>
+</section>
+
 <!-- ========== 開店・場所 ========== -->
 <section class="place pad" id="access">
   <div class="wrap">
     <span class="kicker rv">OPENING &amp; ACCESS</span>
-    <p class="open-big rv d1">2027.1–2<br>OPEN<small>開店日・メニュー・料金・営業時間は、決まり次第 X と Instagram でお知らせします</small></p>
+    <p class="open-big rv d1">2027.1–2<br>OPEN<small>開店日・営業時間は、決まり次第 X と Instagram でお知らせします</small></p>
     <figure class="place-photo rv">
       <img src="images/gaikan_naname.jpg" alt="壁に「家系ラーメンはライスのおかずです」の看板がある、ゆず乃家の店舗の外観（完成イメージ）" loading="lazy">
       <figcaption class="img-note">完成イメージ</figcaption>
