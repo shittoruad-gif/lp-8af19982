@@ -5,10 +5,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="robots" content="noindex, nofollow">
-<title>スタッフ募集｜家系ラーメン 王道乃印 ゆず乃家（広島県福山市・2027年1〜2月オープン予定）</title>
-<meta name="description" content="2027年1〜2月、広島県福山市緑町に開店予定の家系ラーメン「王道乃印 ゆず乃家」が、開店に向けて一緒に働く仲間を募集しています。お問い合わせは公式LINEから。">
-<meta property="og:title" content="スタッフ募集｜家系ラーメン 王道乃印 ゆず乃家（福山市）">
-<meta property="og:description" content="王道家・清水裕正社長が手掛ける「王道乃印」が福山市緑町に。開店に向けて、一緒に働く仲間を募集しています。">
+<title>オープニングスタッフ15名募集｜家系ラーメン 王道乃印 ゆず乃家（広島県福山市・2027年1〜2月オープン予定）</title>
+<meta name="description" content="2027年1〜2月、広島県福山市緑町に開店予定の家系ラーメン「王道乃印 ゆず乃家」がオープニングスタッフ15名を募集。店長候補（月給31万円〜）・正社員（月給28万円〜）・アルバイト（時給1,150円〜）。未経験歓迎（正社員・アルバイト）。お問い合わせは公式LINEから。">
+<meta property="og:title" content="オープニングスタッフ15名募集｜家系ラーメン 王道乃印 ゆず乃家（福山市）">
+<meta property="og:description" content="広島県初上陸の「王道乃印」が福山市緑町に。店長候補・正社員・アルバイト、オープニングスタッフ15名を募集しています。">
 <meta property="og:type" content="website">
 <meta property="og:image" content="images/gaikan_shomen.jpg">
 <meta name="theme-color" content="#0e0c0b">
@@ -74,12 +74,12 @@ a{color:inherit}
 @keyframes blink{50%{opacity:.15}}
 .hero-tate{display:flex;flex-direction:row-reverse;justify-content:center;gap:clamp(6px,2vw,22px);margin:12px 0 2px}
 .hero-tate h1{display:contents}
-.hero-tate .col{writing-mode:vertical-rl;font-family:var(--mincho);font-weight:800;font-size:clamp(30px,8.6vw,64px);line-height:1.05;letter-spacing:.06em;text-shadow:0 6px 30px rgba(0,0,0,.6)}
+.hero-tate .col{writing-mode:vertical-rl;font-family:var(--mincho);font-weight:800;font-size:clamp(26px,7.4vw,64px);line-height:1.05;letter-spacing:.06em;text-shadow:0 6px 30px rgba(0,0,0,.6)}
 .hero-tate .col.kin{color:var(--kin)}
 .hero-tate .col .ch{display:inline-block;opacity:.25;transform:translateY(-10px);filter:blur(4px);animation:ink .5s cubic-bezier(.2,.7,.2,1) forwards}
 @keyframes ink{to{opacity:1;transform:none;filter:none}}
 .hero-tate .meta{writing-mode:vertical-rl;font-size:12px;letter-spacing:.2em;color:var(--kinari-2);border-right:1px solid rgba(244,236,221,.35);padding-right:6px;margin-left:4px;align-self:flex-end}
-.hero-logo{width:min(170px,48%);margin:8px auto 2px;filter:drop-shadow(0 4px 18px rgba(0,0,0,.6))}
+.hero-logo{width:min(140px,40%);margin:6px auto 0;filter:drop-shadow(0 4px 18px rgba(0,0,0,.6))}
 .hero-sub{font-size:12.5px;color:var(--kinari-2);line-height:1.7}
 .hero-sub b{color:#fff;font-weight:700}
 
@@ -109,7 +109,8 @@ a{color:inherit}
 .ken.yuzu .lamp{background:var(--shu)}
 .ken.map .lamp{background:#3a3129}
 .ken-note{font-size:11.5px;color:#4b4339;text-align:center;margin-top:8px}
-.hero .kenbaiki{margin-top:12px}
+.hero .kenbaiki{margin-top:10px}
+@media (max-width:599px){.hero .kenbaiki .led{display:none}.hero .kenbaiki{padding:8px}}
 .fixed-bar{transition:transform .35s,opacity .35s}
 .fixed-bar.hide{transform:translateY(110%);opacity:0;pointer-events:none}
 
@@ -182,6 +183,46 @@ section{position:relative}
 .place-photo{margin-top:30px;position:relative}
 .place-photo img{width:100%;aspect-ratio:16/10;object-fit:cover;object-position:center 45%;border-radius:16px;box-shadow:0 24px 50px rgba(27,23,20,.25)}
 .place-photo .img-note{position:absolute;left:12px;bottom:12px;margin:0}
+
+/* ========== 最初の画面の給与 ========== */
+.pay-chips{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px;width:min(100%,440px);margin:12px auto 0}
+.pay-chips a{display:block;text-decoration:none;background:rgba(14,12,11,.72);border:1px solid rgba(232,176,74,.55);border-radius:8px;padding:6px 4px;line-height:1.25;text-align:center}
+.pay-chips span{display:block;font-size:10.5px;font-weight:700;color:var(--kinari-2)}
+.pay-chips b{display:block;font-family:var(--heavy);font-weight:900;font-size:clamp(13px,3.8vw,17px);color:var(--kin);white-space:nowrap;margin-top:2px}
+.pay-chips b small{font-size:.62em;margin-left:1px}
+.pay-note{font-size:10.5px;color:#c8bcaa;margin-top:5px}
+
+/* ========== 働く理由 ========== */
+.reasons{background:var(--kinari);color:#1b1714;overflow:hidden}
+.reasons .kicker{color:var(--shu)}
+.reason-grid{display:grid;grid-template-columns:minmax(0,1fr);gap:14px;margin-top:34px}
+.reason{position:relative;background:#fff;border-radius:14px;padding:20px 18px 18px 18px;box-shadow:0 10px 26px rgba(27,23,20,.08);border-top:4px solid var(--shu);overflow:hidden}
+.reason .no{position:absolute;right:12px;top:4px;font-family:var(--dela);font-size:46px;line-height:1;color:rgba(196,22,28,.1)}
+.reason .who{display:inline-block;font-size:11px;font-weight:900;color:#fff;background:#1b1714;border-radius:3px;padding:1px 7px;margin-bottom:6px}
+.reason h3{font-family:var(--mincho);font-weight:800;font-size:21px;line-height:1.45}
+.reason h3 em{font-style:normal;color:var(--shu)}
+.reason p{font-size:14.5px;color:#4a4038;margin-top:6px}
+.reason p small{display:block;font-size:12px;color:#7a6e60;margin-top:4px}
+@media (min-width:768px){.reason-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+
+/* ========== 職種のえらびボタン・食券 ========== */
+.job-pick{width:min(100%,560px);margin:30px auto 0}
+.job-pick .ken-grid3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.job-pick button{appearance:none;border:0;cursor:pointer;font:inherit;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;min-height:68px;padding:8px 4px;border-radius:9px;color:#14110f;background:linear-gradient(180deg,#fffdf8,#ece4d6);box-shadow:0 4px 0 #8f8678,0 6px 12px rgba(0,0,0,.25),inset 0 1px 0 #fff;transition:transform .08s,box-shadow .08s}
+.job-pick button b{font-family:var(--heavy);font-weight:900;font-size:clamp(13px,3.7vw,16px);line-height:1.2}
+.job-pick button span{font-size:11px;color:#5d5348}
+.job-pick button[aria-selected="true"]{background:linear-gradient(180deg,#ffe9b0,#e8b04a);transform:translateY(3px);box-shadow:0 1px 0 #8f6a1e,0 2px 5px rgba(0,0,0,.25),inset 0 1px 0 #fff3cf}
+.ticket{margin-top:22px}
+.js .ticket[hidden]{display:none}
+.ticket .t-head b .ninzu{display:inline-block;font-size:.5em;vertical-align:.45em;margin-left:.4em;background:var(--shu);color:#fff;border-radius:4px;padding:.1em .45em}
+.ticket .pay{margin-top:12px;background:#1b1714;color:var(--kinari);border-radius:8px;padding:12px 14px}
+.ticket .pay b{display:block;font-family:var(--heavy);font-weight:900;font-size:clamp(24px,7vw,32px);line-height:1.15;color:var(--kin)}
+.ticket .pay small{display:block;font-size:12px;line-height:1.6;color:#d9cdb8;margin-top:6px}
+.ticket dd small{display:block;font-size:12px;color:#6b5f52;margin-top:2px;line-height:1.6}
+.ticket dd ul{list-style:none}
+.ticket dd li{position:relative;padding-left:1em}
+.ticket dd li::before{content:"・";position:absolute;left:0}
+.ticket .indeed{display:inline-block;margin-top:12px;font-size:13px;font-weight:700;color:#2557d6}
 
 /* ========== 食券（求人） ========== */
 .recruit{background:radial-gradient(120% 80% at 50% 0%,#2a1210,var(--sumi) 70%)}
@@ -325,7 +366,7 @@ footer p + p{margin-top:4px}
   </div>
 
   <div class="hero-body">
-    <span class="hiring"><i></i>スタッフ募集中</span>
+    <span class="hiring"><i></i>オープニングスタッフ15名募集</span>
     <div class="hero-tate">
       <h1>
         <span class="col kin" data-ink>王道家の味を、</span>
@@ -335,10 +376,16 @@ footer p + p{margin-top:4px}
     </div>
     <div class="hero-side">
     <img class="hero-logo" src="images/logo_kamon_nashi_shiro.png" alt="王道乃印 ゆず乃家">
-    <p class="hero-sub"><b>2027年1〜2月 オープン予定</b>　福山市緑町2-1-8<br>開店に向けて、一緒に働く仲間を募集しています。</p>
+    <p class="hero-sub"><b>2027年1〜2月 オープン予定</b>　福山市緑町<br>店長候補・正社員・アルバイトを募集しています。</p>
+    <div class="pay-chips">
+      <a href="#job-tencho"><span>店長候補 1名</span><b>月給31万円<small>〜</small></b></a>
+      <a href="#job-seishain"><span>正社員 4名</span><b>月給28万円<small>〜</small></b></a>
+      <a href="#job-baito"><span>アルバイト 10名</span><b>時給1,150円<small>〜</small></b></a>
+    </div>
+    <p class="pay-note">※月給は固定残業代（45時間分）を含みます。くわしくは募集要項へ</p>
 
     <div class="kenbaiki">
-      <div class="led" aria-hidden="true"><p>ゆず乃家　スタッフ募集中　仕事内容・時間・給与は公式LINEでお気軽にどうぞ　2027年1〜2月 福山市緑町に開店予定</p></div>
+      <div class="led" aria-hidden="true"><p>オープニングスタッフ15名募集　店長候補・正社員・アルバイト　正社員とアルバイトは未経験歓迎　お問い合わせは公式LINEへ</p></div>
       <a class="ken line js-line" href="https://line.me/R/ti/p/@784pttgu" target="_blank" rel="noopener">
         <span class="lamp"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 3C6.5 3 2 6.6 2 11c0 3.9 3.5 7.2 8.3 7.9.3.1.8.2.9.5.1.3.1.7 0 1l-.1.9c0 .3-.2 1 .9.5s5.9-3.5 8.1-6C21.4 14.2 22 12.7 22 11c0-4.4-4.5-8-10-8z"/></svg></span>
         <span class="tx"><b>求人の問い合わせ</b><small>公式LINEで、まずは話だけでも</small></span>
@@ -419,26 +466,71 @@ footer p + p{margin-top:4px}
   </div>
 </section>
 
+<!-- ========== 働く理由 ========== -->
+<section class="reasons pad" id="reasons">
+  <div class="wrap">
+    <span class="kicker rv">WHY YUZUNOYA</span>
+    <h2 class="h2 rv d1">ゆず乃家で働く、<br><span class="shu">6</span>つの理由。</h2>
+    <div class="reason-grid"><div class="reason rv"><span class="no">01</span><span class="who">みんな</span><h3>未経験から、<em>本格家系</em>の技術を。</h3><p>王道家・清水社長が手掛ける「王道乃印」の一杯。仕込みから調理・接客まで、できることから少しずつ覚えられます。<small>オープン前に研修を予定しています。店長候補は飲食店での勤務経験が必要です</small></p></div><div class="reason rv d1"><span class="no">02</span><span class="who">みんな</span><h3>全員が、<em>同じスタートライン</em>。</h3><p>新しいお店なので、先輩・後輩の垣根なし。仲間と意見を出し合いながら、ゼロからお店をつくれます。</p></div><div class="reason rv d2"><span class="no">03</span><span class="who">正社員</span><h3><em>年間休日105日</em>。</h3><p>週休2日を基本としたシフト制。月8〜9日程度のお休みで、希望休の相談もできます。</p></div><div class="reason rv"><span class="no">04</span><span class="who">正社員</span><h3><em>家賃扶助 月2万円</em>。</h3><p>新生活や一人暮らしを始める方を応援します。<small>対象者のみ。会社規定による支給条件があります</small></p></div><div class="reason rv d1"><span class="no">05</span><span class="who">アルバイト</span><h3><em>週3日・1日4時間</em>から。</h3><p>朝の仕込みは2時間30分から。平日のみ・土日祝のみも相談できます。学生・主婦（夫）・Wワークも歓迎です。</p></div><div class="reason rv d2"><span class="no">06</span><span class="who">みんな</span><h3>その先に、<em>店長</em>という道も。</h3><p>正社員は店長・店舗責任者へのステップアップを、アルバイトは正社員登用制度を用意しています。</p></div></div>
+  </div>
+</section>
+
 <!-- ========== 食券（求人） ========== -->
 <section class="recruit pad" id="recruit">
   <div class="wrap">
     <div style="text-align:center">
       <span class="kicker rv">RECRUIT</span>
-      <h2 class="h2 rv d1">スタッフ募集の<br><span class="shu">食券</span>、出ました。</h2>
+      <h2 class="h2 rv d1">募集要項の<br><span class="shu">食券</span>、出ました。</h2>
     </div>
-    <div class="ticket rv" id="ticket">
-      <div class="t-head"><b>スタッフ募集</b><small>王道乃印 ゆず乃家</small></div>
+    <div class="kenbaiki job-pick rv">
+      <div class="led" aria-hidden="true"><p>職種のボタンを押してください　店長候補1名　正社員4名　アルバイト・パート10名</p></div>
+      <div class="ken-grid3" role="tablist" aria-label="職種">
+        <button type="button" role="tab" aria-selected="true" aria-controls="job-tencho"><b>店長候補</b><span>正社員 1名</span></button>
+        <button type="button" role="tab" aria-selected="false" aria-controls="job-seishain"><b>正社員</b><span>調理・接客 4名</span></button>
+        <button type="button" role="tab" aria-selected="false" aria-controls="job-baito"><b>アルバイト</b><span>ホール・キッチン 10名</span></button>
+      </div>
+    </div>
+    <div class="ticket rv" id="job-tencho" role="tabpanel">
+      <div class="t-head"><b>店長候補<span class="ninzu">1名</span></b><small>正社員　王道乃印 ゆず乃家</small></div>
       <span class="hanko" aria-hidden="true">募集</span>
-      <dl>
-        <dt>勤務地</dt><dd>広島県福山市緑町2-1-8<br>バス停「緑町」から徒歩1分</dd>
-        <dt>開店</dt><dd>2027年1〜2月 予定</dd>
-        <dt>条件</dt><dd>仕事内容・勤務時間・給与は、公式LINEでお問い合わせください</dd>
-      </dl>
+      <div class="pay"><b>月給31万円〜50万円</b><small>固定残業代95,000円（45時間分）を含みます。45時間を超える時間外労働と、22時以降の深夜手当は別途支給。<br>月給31万円の内訳：基本給215,000円＋固定残業代95,000円</small></div>
+      <dl><dt>仕事内容</dt><dd><ul><li>家系ラーメンの仕込み・調理・接客</li><li>売上・原価の管理、発注・在庫管理</li><li>スタッフの育成・シフト管理</li><li>オープンに向けた店づくり</li></ul></dd><dt>応募資格</dt><dd>飲食店での勤務経験がある方<small>店長経験は問いません。副店長・リーダー経験のある方も歓迎</small></dd><dt>勤務時間</dt><dd>8:30〜23:30の間でシフト制<small>実働8時間（休憩60分）・早番／遅番の交代制</small></dd><dt>休日</dt><dd>年間休日105日・週休2日（シフト制）<small>月8〜9日程度。希望休の相談可・年次有給休暇あり</small></dd><dt>待遇</dt><dd><ul><li>賞与年1回（会社業績・勤務評価による）</li><li>昇給あり（会社規定による）</li><li>家賃扶助 月2万円（対象者・会社規定による）</li><li>交通費実費支給（月上限2万円）</li><li>社会保険完備・オープン前研修あり</li></ul></dd><dt>勤務地</dt><dd>広島県福山市緑町（出店予定地）<small>車・バイク・自転車通勤可（駐車場の利用条件はお問い合わせください）</small></dd></dl>
+      <a class="indeed" href="https://jp.indeed.com/viewjob?jk=f88e5073bccde2d5" target="_blank" rel="noopener">募集要項の全文を見る（Indeed）→</a>
       <div class="tear">
         この食券の使い方
         <ol>
           <li>下のボタンから、ゆず乃家の公式LINEを友だち追加</li>
-          <li>トークで「求人について」と送る</li>
+          <li>トークで「求人について」と、希望の職種（店長候補）を送る</li>
+          <li>仕事内容や時間など、気になることをお聞きください</li>
+        </ol>
+      </div>
+    </div>
+    <div class="ticket rv" id="job-seishain" role="tabpanel">
+      <div class="t-head"><b>正社員<span class="ninzu">4名</span></b><small>調理・接客　王道乃印 ゆず乃家</small></div>
+      <span class="hanko" aria-hidden="true">募集</span>
+      <div class="pay"><b>月給28万円〜40万円</b><small>固定残業代65,000円（45時間分）を含みます（月給28万円の場合）。45時間を超える時間外労働と、22時以降の深夜手当は別途支給。<br>月給28万円の内訳：基本給215,000円＋固定残業代65,000円。経験・能力を考慮して決定</small></div>
+      <dl><dt>仕事内容</dt><dd><ul><li>家系ラーメンの仕込み・調理・盛り付け</li><li>接客・ご案内・料理の提供</li><li>発注・在庫・衛生管理</li><li>アルバイトスタッフのサポート</li></ul></dd><dt>応募資格</dt><dd>学歴・経験・資格不問<small>未経験・異業種からの転職を歓迎。最初は接客や調理補助から</small></dd><dt>勤務時間</dt><dd>8:30〜23:30の間でシフト制<small>実働8時間（休憩60分）・早番／遅番の交代制</small></dd><dt>休日</dt><dd>年間休日105日・週休2日（シフト制）<small>月8〜9日程度。希望休の相談可・年次有給休暇あり</small></dd><dt>待遇</dt><dd><ul><li>賞与年1回（会社業績・勤務評価による）</li><li>昇給あり（会社規定による）</li><li>家賃扶助 月2万円（対象者・会社規定による）</li><li>交通費支給</li><li>社会保険完備・食事補助制度・定期健康診断・制服貸与・研修制度</li><li>将来は店長・店舗責任者へのステップアップも</li></ul></dd><dt>勤務地</dt><dd>広島県福山市緑町（出店予定地）<small>車・バイク・自転車通勤可（駐車場の利用条件はお問い合わせください）</small></dd></dl>
+      <a class="indeed" href="https://jp.indeed.com/viewjob?jk=40fdf863abc12cae" target="_blank" rel="noopener">募集要項の全文を見る（Indeed）→</a>
+      <div class="tear">
+        この食券の使い方
+        <ol>
+          <li>下のボタンから、ゆず乃家の公式LINEを友だち追加</li>
+          <li>トークで「求人について」と、希望の職種（正社員）を送る</li>
+          <li>仕事内容や時間など、気になることをお聞きください</li>
+        </ol>
+      </div>
+    </div>
+    <div class="ticket rv" id="job-baito" role="tabpanel">
+      <div class="t-head"><b>アルバイト・パート<span class="ninzu">10名</span></b><small>ホール・キッチン　王道乃印 ゆず乃家</small></div>
+      <span class="hanko" aria-hidden="true">募集</span>
+      <div class="pay"><b>時給1,150円〜1,300円</b><small>22時以降は25％以上の深夜割増。時間外勤務手当あり（法令に基づき支給）。経験・能力を考慮して決定</small></div>
+      <dl><dt>仕事内容</dt><dd><ul><li>ホール：ご案内・料理の提供・片付け</li><li>キッチン補助：盛り付け・仕込み・洗い場</li><li>開店準備・閉店作業</li></ul></dd><dt>応募資格</dt><dd>未経験・初めてのアルバイト歓迎<small>学生・主婦（夫）・フリーター・Wワーク歓迎。22時以降の勤務は18歳以上</small></dd><dt>勤務時間</dt><dd>8:30〜23:30の間でシフト制<small>朝 8:30〜11:00（仕込み）／昼 11:00〜15:00／夜 17:00〜23:00<br>週3日〜・1日4時間〜OK（朝の仕込みは2時間30分〜）。平日のみ・土日祝のみも相談可</small></dd><dt>休日</dt><dd>シフト制<small>学校行事・家庭の都合のお休みも相談可・年次有給休暇あり</small></dd><dt>待遇</dt><dd><ul><li>昇給あり（能力・勤務評価による）</li><li>正社員登用制度あり</li><li>制服貸与・扶養内勤務OK</li><li>社会保険（勤務条件に応じて法令どおり加入）</li><li>試用期間3か月（同条件）</li></ul></dd><dt>勤務地</dt><dd>広島県福山市緑町（出店予定地）<small>車・バイク・自転車通勤可（駐車場の利用条件はお問い合わせください）</small></dd></dl>
+      <a class="indeed" href="https://jp.indeed.com/viewjob?jk=4709d7804afc1238" target="_blank" rel="noopener">募集要項の全文を見る（Indeed）→</a>
+      <div class="tear">
+        この食券の使い方
+        <ol>
+          <li>下のボタンから、ゆず乃家の公式LINEを友だち追加</li>
+          <li>トークで「求人について」と、希望の職種（アルバイト・パート）を送る</li>
           <li>仕事内容や時間など、気になることをお聞きください</li>
         </ol>
       </div>
@@ -537,9 +629,9 @@ footer p + p{margin-top:4px}
 <section class="yuzu">
   <div class="wrap">
     <div class="yuzu-card rv">
-      <span class="tag">同じ経営者が運営しています</span>
+      <span class="tag">ゆずグループ</span>
       <h2>社会福祉法人ゆず</h2>
-      <p>ゆず乃家の経営者は、東広島市で「地域密着型特養ゆずの家」などを運営する社会福祉法人ゆずも手掛けています。</p>
+      <p>ゆず乃家を運営する株式会社ハートランドは、介護・福祉事業を展開するゆずグループの一員です。同じ経営者が、東広島市で「地域密着型特養ゆずの家」などを運営する社会福祉法人ゆずも手掛けています。人を育て、長く働ける職場をつくってきた経験を、ラーメン店でも生かします。</p>
       <a class="go" href="https://yuzunoya.or.jp/" target="_blank" rel="noopener">社会福祉法人ゆずの<br>ホームページを見る<span>→</span></a>
       <p class="url">https://yuzunoya.or.jp/</p>
     </div>
@@ -613,6 +705,22 @@ var LINE_URL = 'https://line.me/R/ti/p/@784pttgu';
   var bar = document.querySelector('.fixed-bar'), heroKen = document.querySelector('.hero .ken');
   new IntersectionObserver(function(es){ bar.classList.toggle('hide', es[0].isIntersecting); }).observe(heroKen);
 
+  // 職種のボタンで食券を切り替える（JavaScriptが動かないときは3枚とも表示）
+  var tabs = document.querySelectorAll('.job-pick [role="tab"]');
+  function pick(id, scroll){
+    tabs.forEach(function(t){ var on = t.getAttribute('aria-controls') === id; t.setAttribute('aria-selected', on ? 'true' : 'false'); });
+    document.querySelectorAll('.ticket').forEach(function(tk){
+      var on = tk.id === id; tk.hidden = !on;
+      if (on) { tk.classList.remove('in'); void tk.offsetWidth; tk.classList.add('in'); }
+    });
+    if (scroll) document.getElementById(id).scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: 'start' });
+  }
+  tabs.forEach(function(t){ t.addEventListener('click', function(){ pick(t.getAttribute('aria-controls')); }); });
+  if (tabs.length) pick('job-tencho');
+  document.querySelectorAll('.pay-chips a').forEach(function(a){
+    a.addEventListener('click', function(e){ e.preventDefault(); pick(a.getAttribute('href').slice(1), true); });
+  });
+
   // 見出しを一文字ずつ墨がにじむように出す
   var base = 0;
   document.querySelectorAll('[data-ink]').forEach(function(el){
@@ -632,7 +740,7 @@ var LINE_URL = 'https://line.me/R/ti/p/@784pttgu';
   var io = new IntersectionObserver(function(es){
     es.forEach(function(e){ if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
   }, { threshold: 0.18 });
-  document.querySelectorAll('.rv,#ticket,#fan,#mise').forEach(function(el){ io.observe(el); });
+  document.querySelectorAll('.rv,.ticket,#fan,#mise').forEach(function(el){ io.observe(el); });
 
   // お好み
   var labels = { men:'麺', aji:'味', abura:'油' };
