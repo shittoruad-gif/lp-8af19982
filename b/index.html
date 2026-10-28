@@ -296,10 +296,18 @@ section{position:relative}
 .place .soon{color:#6b5f52}
 
 /* ========== 社会福祉法人ゆず ========== */
-.yuzu{background:var(--kinari);color:#1b1714;padding:0 0 96px}
+.yuzu{background:var(--sumi);color:var(--kinari);padding:0 0 96px}
+.yuzu-card p + p{margin-top:8px}
+.yuzu-sub{position:relative;margin-top:22px;border-top:1px dashed rgba(244,236,221,.25);padding-top:16px}
+.yuzu-sub .sub-tag{display:block;font-size:12px;color:var(--muted);margin-bottom:8px}
+.yuzu-sub a{display:flex;flex-wrap:wrap;align-items:center;gap:2px 10px;text-decoration:none;color:var(--kinari);border:1px solid rgba(232,176,74,.5);border-radius:10px;padding:12px 14px}
+.yuzu-sub a b{font-size:15px}
+.yuzu-sub a small{flex-basis:100%;order:3;font-size:12px;color:#c8bcaa}
+.yuzu-sub a span{margin-left:auto;font-family:var(--dela);color:var(--kin)}
+.yuzu-card{box-shadow:0 0 0 1px rgba(232,176,74,.35)}
 .yuzu-card{position:relative;max-width:720px;margin:0 auto;border-radius:22px;overflow:hidden;background:#1b1714;color:var(--kinari);padding:30px 24px}
-.yuzu-card::before{content:"";position:absolute;right:-60px;top:-60px;width:220px;height:220px;border-radius:50%;background:radial-gradient(circle at 35% 35%,#ffd65c,#f2a516 60%,#c97c08);opacity:.95}
-.yuzu-card::after{content:"";position:absolute;right:62px;top:-20px;width:34px;height:20px;border-radius:0 100% 0 100%;background:#4c8a2b;transform:rotate(-20deg)}
+.yuzu-card::before{content:"";position:absolute;right:-70px;top:-90px;width:170px;height:170px;border-radius:50%;background:radial-gradient(circle at 35% 35%,#ffd65c,#f2a516 60%,#c97c08);opacity:.95}
+.yuzu-card::after{content:"";position:absolute;right:40px;top:-24px;width:34px;height:20px;border-radius:0 100% 0 100%;background:#4c8a2b;transform:rotate(-20deg)}
 .yuzu-card .tag{position:relative;display:inline-block;font-size:12px;font-weight:700;background:var(--kinari);color:#1b1714;border-radius:999px;padding:3px 12px}
 .yuzu-card h2{position:relative;font-family:var(--mincho);font-weight:800;font-size:clamp(28px,7.5vw,40px);line-height:1.3;margin-top:12px}
 .yuzu-card p{position:relative;margin-top:10px;color:var(--kinari-2);font-size:15px;max-width:520px}
@@ -317,6 +325,7 @@ section{position:relative}
 footer{background:#070605;color:#8f8473;font-size:12px;text-align:center;padding:30px 20px calc(110px + env(safe-area-inset-bottom))}
 footer .f-logo{width:150px;margin:6px auto 22px;opacity:.95}
 footer a.f-yuzu{display:block;width:min(100%,420px);margin:0 auto 18px;padding:13px 16px;border:1px solid rgba(232,176,74,.6);border-radius:10px;color:var(--kin);text-decoration:none;font-weight:700;font-size:14px;line-height:1.5}
+footer a.f-yuzu-sub{padding:9px 14px;font-size:13px;border-color:rgba(232,176,74,.3);margin-top:-8px}
 footer a.f-yuzu small{display:block;font-weight:400;font-size:11.5px;color:#a59885}
 footer p + p{margin-top:4px}
 
@@ -596,8 +605,8 @@ footer p + p{margin-top:4px}
     <h2 class="h2 rv d1">お品書き<span style="font-size:.5em;margin-left:.4em;color:var(--kin)">（税込）</span></h2>
     <div class="board rv d2">
       <div class="board-grid">
-        <div><div class="mgroup"><h3>ラーメン</h3><ul><li><span class="nm">ラーメン</span><span class="pr">950<small>円</small></span></li><li><span class="nm">チャーシュー麺<small class="sub">（チャーシュー3枚）</small></span><span class="pr">1,200<small>円</small></span></li><li><span class="nm">チャーシュー麺<small class="sub">（チャーシュー5枚）</small></span><span class="pr">1,350<small>円</small></span></li><li><span class="nm">王道乃印ラーメン</span><span class="pr">1,450<small>円</small></span></li><li><span class="nm">ゆず乃家ラーメン</span><span class="pr">1,650<small>円</small></span></li><li><span class="nm">のり玉ラーメン</span><span class="pr">1,250<small>円</small></span></li></ul></div><div class="mgroup"><h3>つけ麺・油そば</h3><ul><li><span class="nm">つけ麺</span><span class="pr">1,050<small>円</small></span></li><li><span class="nm">つけチャーシュー麺</span><span class="pr">1,250<small>円</small></span></li><li><span class="nm">油そば</span><span class="pr">950<small>円</small></span></li><li><span class="nm">麻辣油そば</span><span class="pr">1,050<small>円</small></span></li></ul></div></div>
-        <div><div class="mgroup"><h3>ライス</h3><ul><li><span class="nm">半ライス</span><span class="pr">100<small>円</small></span></li><li><span class="nm">ライス</span><span class="pr">150<small>円</small></span></li><li><span class="nm">大ライス</span><span class="pr">200<small>円</small></span></li><li><span class="nm">チャーシューまぶしごはん</span><span class="pr">250<small>円</small></span></li><li><span class="nm">明太ごはん</span><span class="pr">250<small>円</small></span></li><li><span class="nm">玉子かけごはん</span><span class="pr">200<small>円</small></span></li><li><span class="nm">ネギ丼</span><span class="pr">350<small>円</small></span></li></ul></div><div class="mgroup"><h3>トッピング</h3><ul><li><span class="nm">味玉</span><span class="pr">150<small>円</small></span></li><li><span class="nm">のり</span><span class="pr">150<small>円</small></span></li><li><span class="nm">ほうれん草</span><span class="pr">150<small>円</small></span></li><li><span class="nm">玉ねぎ</span><span class="pr">100<small>円</small></span></li><li><span class="nm">薬味ネギ</span><span class="pr">100<small>円</small></span></li><li><span class="nm">白髪ネギ</span><span class="pr">200<small>円</small></span></li><li><span class="nm">チャーシュー<small class="sub">（1枚）</small></span><span class="pr">100<small>円</small></span></li><li><span class="nm">キクラゲ</span><span class="pr">150<small>円</small></span></li><li><span class="nm">わかめ</span><span class="pr">100<small>円</small></span></li></ul></div></div>
+        <div><div class="mgroup"><h3>ラーメン</h3><ul><li><span class="nm">ラーメン</span><span class="pr">950<small>円</small></span></li><li><span class="nm">チャーシュー麺<small class="sub">（チャーシュー3枚）</small></span><span class="pr">1,200<small>円</small></span></li><li><span class="nm">チャーシュー麺<small class="sub">（チャーシュー5枚）</small></span><span class="pr">1,350<small>円</small></span></li><li><span class="nm">王道乃印ラーメン</span><span class="pr">1,450<small>円</small></span></li><li><span class="nm">ゆず乃家ラーメン</span><span class="pr">1,650<small>円</small></span></li><li><span class="nm">のり玉ラーメン</span><span class="pr">1,250<small>円</small></span></li><li><span class="nm">ネギラーメン<small class="sub">（白）</small></span><span class="pr">1,150<small>円</small></span></li><li><span class="nm">ネギラーメン<small class="sub">（赤）</small></span><span class="pr">1,150<small>円</small></span></li></ul></div><div class="mgroup"><h3>つけ麺・油そば</h3><ul><li><span class="nm">つけ麺</span><span class="pr">1,050<small>円</small></span></li><li><span class="nm">つけチャーシュー麺<small class="sub">（チャーシュー3枚）</small></span><span class="pr">1,250<small>円</small></span></li><li><span class="nm">つけチャーシュー麺<small class="sub">（チャーシュー5枚）</small></span><span class="pr">1,450<small>円</small></span></li><li><span class="nm">のりたまつけ麺</span><span class="pr">1,350<small>円</small></span></li><li><span class="nm">王道つけ麺</span><span class="pr">1,550<small>円</small></span></li><li><span class="nm">ネギつけ麺<small class="sub">（白）</small></span><span class="pr">1,250<small>円</small></span></li><li><span class="nm">ネギつけ麺<small class="sub">（赤）</small></span><span class="pr">1,250<small>円</small></span></li><li><span class="nm">油そば</span><span class="pr">950<small>円</small></span></li><li><span class="nm">麻辣油そば</span><span class="pr">1,050<small>円</small></span></li></ul></div></div>
+        <div><div class="mgroup"><h3>ライス</h3><ul><li><span class="nm">小ライス</span><span class="pr">150<small>円</small></span></li><li><span class="nm">中ライス</span><span class="pr">200<small>円</small></span></li><li><span class="nm">大ライス</span><span class="pr">250<small>円</small></span></li><li><span class="nm">チャーシューまぶしごはん</span><span class="pr">300<small>円</small></span></li><li><span class="nm">半チャーシューまぶしごはん</span><span class="pr">250<small>円</small></span></li><li><span class="nm">玉子まぶしごはん</span><span class="pr">300<small>円</small></span></li><li><span class="nm">半玉子まぶしごはん</span><span class="pr">250<small>円</small></span></li><li><span class="nm">ネギ丼<small class="sub">（白）</small></span><span class="pr">400<small>円</small></span></li><li><span class="nm">ネギ丼<small class="sub">（赤）</small></span><span class="pr">400<small>円</small></span></li></ul></div><div class="mgroup"><h3>トッピング</h3><ul><li><span class="nm">味玉</span><span class="pr">150<small>円</small></span></li><li><span class="nm">のり</span><span class="pr">150<small>円</small></span></li><li><span class="nm">ほうれん草</span><span class="pr">150<small>円</small></span></li><li><span class="nm">玉ねぎ</span><span class="pr">100<small>円</small></span></li><li><span class="nm">薬味ネギ</span><span class="pr">100<small>円</small></span></li><li><span class="nm">白髪ネギ</span><span class="pr">200<small>円</small></span></li><li><span class="nm">チャーシュー<small class="sub">（1枚）</small></span><span class="pr">100<small>円</small></span></li><li><span class="nm">キクラゲ</span><span class="pr">150<small>円</small></span></li><li><span class="nm">わかめ</span><span class="pr">100<small>円</small></span></li></ul></div></div>
       </div>
       <p class="yotei"><b>税込</b><span>価格はすべて税込です。</span></p>
     </div>
@@ -640,18 +649,7 @@ footer p + p{margin-top:4px}
   </div>
 </section>
 
-<!-- ========== 社会福祉法人ゆず ========== -->
-<section class="yuzu">
-  <div class="wrap">
-    <div class="yuzu-card rv">
-      <span class="tag">ゆずグループ</span>
-      <h2>社会福祉法人ゆず</h2>
-      <p>ゆず乃家を運営する株式会社ハートランドは、介護・福祉事業を展開するゆずグループの一員です。同じ経営者が、東広島市で「地域密着型特養ゆずの家」などを運営する社会福祉法人ゆずも手掛けています。人を育て、長く働ける職場をつくってきた経験を、ラーメン店でも生かします。</p>
-      <a class="go" href="https://yuzunoya.or.jp/" target="_blank" rel="noopener">社会福祉法人ゆずの<br>ホームページを見る<span>→</span></a>
-      <p class="url">https://yuzunoya.or.jp/</p>
-    </div>
-  </div>
-</section>
+
 
 <!-- ========== 最後 ========== -->
 <section class="final pad">
@@ -685,11 +683,30 @@ footer p + p{margin-top:4px}
   </div>
 </section>
 
+<!-- ========== ゆずグループ ========== -->
+<section class="yuzu" id="yuzu">
+  <div class="wrap">
+    <div class="yuzu-card rv">
+      <span class="tag">ゆずグループ</span>
+      <h2>株式会社ゆず</h2>
+      <p>ゆず乃家を運営する株式会社ハートランドは、ゆずグループの一員です。株式会社ゆずは、尾道市を中心にグループホーム・デイサービス・訪問看護・高齢者住宅・保育園・ホテルなど、幅広い福祉の事業を展開しています。</p>
+      <p>「アジア太平洋高齢者ケアイノベーションアワード2023」施設部門で最優秀を受賞。人を育て、長く働ける職場をつくってきた経験を、ラーメン店でも生かします。</p>
+      <a class="go" href="https://yuzucco.com/" target="_blank" rel="noopener">株式会社ゆずの<br>ホームページを見る<span>→</span></a>
+      <p class="url">https://yuzucco.com/</p>
+      <div class="yuzu-sub">
+        <span class="sub-tag">グループには、こちらも</span>
+        <a href="https://yuzunoya.or.jp/" target="_blank" rel="noopener"><b>社会福祉法人ゆず</b><small>東広島市「地域密着型特養ゆずの家」など</small><span>→</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
 </main>
 
 <footer>
   <img class="f-logo" src="../images/logo_kamon_ari_shiro.png" alt="王道乃印 ゆず乃家" loading="lazy">
-  <a class="f-yuzu" href="https://yuzunoya.or.jp/" target="_blank" rel="noopener">社会福祉法人ゆず ホームページ<small>同じ経営者が運営しています（東広島市）</small></a>
+  <a class="f-yuzu" href="https://yuzucco.com/" target="_blank" rel="noopener">株式会社ゆず ホームページ<small>ゆずグループ（尾道市）</small></a>
+  <a class="f-yuzu f-yuzu-sub" href="https://yuzunoya.or.jp/" target="_blank" rel="noopener">社会福祉法人ゆず ホームページ<small>ゆずグループ（東広島市）</small></a>
   <p>家系ラーメン 王道乃印 ゆず乃家　広島県福山市緑町2-1-8</p>
   <a class="f-tel" href="tel:08016407293">求人のお問い合わせ　080-1640-7293</a>
   <p>運営：株式会社ハートランド</p>
