@@ -254,9 +254,9 @@ section{position:relative}
 .about{background:var(--sumi-2);overflow:hidden}
 .about-grid{display:grid;grid-template-columns:minmax(0,1fr);gap:34px;margin-top:40px}
 .about-photo{position:relative}
-.about-photo img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center 75%;clip-path:polygon(0 0,100% 4%,100% 100%,0 96%)}
+.about-photo .main{display:block;width:100%;height:auto;clip-path:polygon(0 0,100% 3%,100% 100%,0 97%)}
 .about-photo figcaption{font-size:11px;color:var(--muted);margin-top:8px}
-.about-photo .seal{position:absolute;left:-8px;bottom:30px;width:88px;padding:8px;background:var(--kinari);border-radius:8px;transform:rotate(-6deg);box-shadow:0 10px 24px rgba(0,0,0,.4)}
+.about-photo .seal{position:absolute;right:10px;top:-18px;width:96px;height:auto;aspect-ratio:auto;object-fit:contain;clip-path:none;padding:8px;background:var(--kinari);border-radius:8px;transform:rotate(-6deg);box-shadow:0 10px 24px rgba(0,0,0,.4)}
 .nums{display:grid;gap:0}
 .num{display:grid;grid-template-columns:auto 1fr;gap:16px;align-items:start;padding:22px 0;border-top:1px solid rgba(244,236,221,.16)}
 .num:last-child{border-bottom:1px solid rgba(244,236,221,.16)}
@@ -569,7 +569,7 @@ footer p + p{margin-top:4px}
     <p class="about-lead rv d2">家系ラーメン店「王道家」。その清水裕正社長が手掛けるブランドが「王道乃印」です。ゆず乃家は、その「王道乃印」の店として、広島県で初めて福山市に開店します。</p>
     <div class="about-grid">
       <figure class="about-photo rv">
-        <img src="../images/staff_3nin.jpg" alt="ゆず乃家のTシャツを着たスタッフが、王道乃印の店舗の前で腕を組んで立つ写真" loading="lazy">
+        <img class="main" width="1100" height="1289" src="../images/staff_3nin.jpg" alt="ゆず乃家のTシャツを着たスタッフが、王道乃印の店舗の前で腕を組んで立つ写真" loading="lazy">
         <img class="seal" src="../images/logo_kamon_ari.png" alt="王道乃印 ゆず乃家のロゴ" loading="lazy">
         <figcaption>王道乃印 えにし家の前で</figcaption>
       </figure>
